@@ -1,3 +1,8 @@
+# Rails：GitHubからコードをダウンロードして動かしてみるまでの手順
+以下を参考にする
+http://tyoshikawa1106.hatenablog.com/entry/2015/09/07/164134
+
+
 # 2章でのまとめ
 ## protect_from_forgery with: :exception について
 app/controllers/application_controller.rb
