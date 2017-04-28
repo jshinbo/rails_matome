@@ -1,6 +1,27 @@
+# 主に利用するサイト
+* Rails チュートリアル
+https://railstutorial.jp/
+* Rails ガイド
+https://railsguides.jp/
+* API ドキュメント
+http://api.rubyonrails.org/
+
+
 # Rails：GitHubからコードをダウンロードして動かしてみるまでの手順
 以下を参考にする
 http://tyoshikawa1106.hatenablog.com/entry/2015/09/07/164134
+
+
+# 1章でのまとめ
+## Bundlerについて
+Bundler は RubyGems と一緒に使われる、アプリケーションの依存関係を管理するためのツール
+より詳細については、以下を参考にする
+※ Bundler（英語）
+http://bundler.io/
+※ Bundler 入門（バージョンは古い）
+http://ruby.studio-kingdom.com/bundler/guides/getting_started
+※ Bundler の使い方（qiita）
+http://qiita.com/oshou/items/6283c2315dc7dd244aef
 
 
 # 2章でのまとめ
@@ -167,3 +188,82 @@ https://railsguides.jp/action_view_overview.html#action-view%E3%81%8C%E6%8F%90%E
 
 ## モジュールについて
 Rails チュートリアル 4.2.5 title ヘルパー、再び を参考にする（さわり程度は書いてある）
+
+
+--
+
+
+# 5章でのまとめ
+## Rails のヘルパー link_to について
+link_toの第1引数はリンクテキスト、第2引数はURL,第3引数はオプションハッシュ
+詳細は API ドキュメント で検索
+
+
+## Sass について（SCSS）
+Sass については以下を参考にする
+* Sass 公式（英語）
+http://sass-lang.com/
+* Sass（SCSS）入門
+http://www.buildinsider.net/web/rubyonrails4/0903
+※ 上記で記載されている CoffeeScript については、同サイト内にリンクがあるので
+そちらを参考にする
+* CSSのメタ言語Sass(SCSS)、LESSの完全入門
+http://qiita.com/ritukiii/items/67b3c50002b48c6186d6
+
+## パーシャル について（partial）
+パーシャルについては Action View の概要 内にある以下を参考にする
+* 3.2 パーシャル、
+https://railsguides.jp/action_view_overview.html#%E3%83%91%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB
+* 4 パーシャルレイアウト
+https://railsguides.jp/action_view_overview.html#%E3%83%91%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88
+
+
+## アセットパイプライン について
+アセットパイプライン については以下を参考にする
+https://railsguides.jp/asset_pipeline.html
+
+
+## マニフェストファイル について
+マニフェストファイルについては、アセットパイプライン内にある以下を参考にする
+* 2.4 マニフェストファイルとディレクティブ
+https://railsguides.jp/asset_pipeline.html#%E3%83%9E%E3%83%8B%E3%83%95%E3%82%A7%E3%82%B9%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A8%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96
+
+
+## プリプロセス について（チュートリアルではプリプロセッサ）
+プリプロセスについては、アセットパイプライン内にある以下を参考にする
+* 2.5 プリプロセス
+https://railsguides.jp/asset_pipeline.html#%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9
+
+
+## 本番環境での効率性 について
+アセットパイプラインのメリット等があるので、参考にすること
+※ 5章で 本番環境での効率性 で検索をして該当箇所を参考にする
+
+
+## Rails のルートURL について
+ルーティングについて を参考にする
+Prefix_path について（path ヘルパー） を参考にする
+
+チュートリアルにもあるように、以下のような一般的な規約に従う
+Prefix_path書式: 基本的にはこちらを使用する
+Prefix_url書式:  リダイレクトの場合のみ使用する
+
+
+## リンクのテスト について（統合/結合テスト、integration test）
+integration test については、Rails テスティングガイド 内にある以下を参考にする
+* 5 結合テスト
+https://railsguides.jp/testing.html#%E7%B5%90%E5%90%88%E3%83%86%E3%82%B9%E3%83%88
+
+### assert_select について
+assert_selectには2つの書式があります。
+
+* 1つ目の書式
+assert_select(セレクタ, [確認条件], [失敗時のメッセージ])
+セレクタで指定された要素が条件に一致することを主張します。
+セレクタにはCSSセレクタの式 (文字列) や代入値を持つ式を使用できます。
+
+* 2つ目の書式
+assert_select(要素, セレクタ, [確認条件], [失敗時のメッセージ])
+選択されたすべての要素が条件に一致することを主張します。
+選択される要素は、element (Nokogiri::XML::Node or Nokogiri::XML::NodeSetのインスタンス)
+ からその子孫要素までの範囲から選択されます。
