@@ -267,3 +267,88 @@ assert_select(要素, セレクタ, [確認条件], [失敗時のメッセージ
 選択されたすべての要素が条件に一致することを主張します。
 選択される要素は、element (Nokogiri::XML::Node or Nokogiri::XML::NodeSetのインスタンス)
  からその子孫要素までの範囲から選択されます。
+
+
+--
+
+
+# 6章でのまとめ
+## マイグレーションについて
+Active Record マイグレーション を参考にする
+https://railsguides.jp/active_record_migrations.html
+
+## 6.1.2 model ファイル について
+Active Record について を参考にする
+以下、URL引用
+* Active Record の基礎
+https://railsguides.jp/active_record_basics.html
+* Active Record マイグレーション
+https://railsguides.jp/active_record_migrations.html
+* Active Record バリデーション
+https://railsguides.jp/active_record_validations.html
+* Active Record コールバック
+https://railsguides.jp/active_record_callbacks.html
+* Active Record の関連付け
+https://railsguides.jp/association_basics.html
+* Active Record クエリインターフェイス
+https://railsguides.jp/active_record_querying.html
+
+
+## 6.1.3 ユーザーオブジェクトを作成する について
+Active Record の基礎 5.1 Create を参考にする
+https://railsguides.jp/active_record_basics.html#create
+
+new、save、create の違いが記載されている
+
+
+## 6.1.4 ユーザーオブジェクトを検索する について
+Rails ガイド の以下を参考にする
+https://railsguides.jp/active_record_querying.html
+
+
+## 6.1.5 ユーザーオブジェクトを更新する
+reload: データベースの情報を元にオブジェクトを再読み込みする
+update_attributes: 属性のハッシュを受け取り、成功時には更新と保存を続けて同時に行う
+update_attribute:  同上（※特定の属性のみを更新する）
+
+※ 詳細は API ドキュメント を参考にする
+
+
+## 6.2 ユーザーを検証する について
+Active Record バリデーション を参考にする
+https://railsguides.jp/active_record_validations.html
+
+※ テストは テストについて を以下を参考にする
+https://railsguides.jp/testing.html
+
+
+## コラム 6.2. データベースのインデックス
+Rails チュートリアルを参考にする
+
+
+## rails genetate migration について
+Active Record マイグレーション を参考にする
+https://railsguides.jp/active_record_migrations.html
+
+
+## コールバック について
+Active Record コールバック を参考にする
+https://railsguides.jp/active_record_callbacks.html
+
+
+## 6.3 セキュアなパスワードを追加する について
+このあたりから、Rails のビルトイン has_secure_password を利用した
+認証、認可のチュートリアルが始まるので、飛ばさずに進めることを推奨
+
+
+## has_secure_password について
+モデルに has_secure_password を追加することで、以下の様な機能が利用できる
+ただし、モデル内にpassword_digestという属性が含まれている必要がある
+
+* セキュアにハッシュ化したパスワードを、データベース内のpassword_digestという属性に保存できるようになる
+* 2つのペアの仮想的な属性 (passwordとpassword_confirmation) が使えるようになる
+  - また、存在性と値が一致するかどうかのバリデーションも追加される
+* authenticateメソッドが使えるようになる
+  - (引数の文字列がパスワードと一致するとUserオブジェクトを、間違っているとfalseを返すメソッド)
+
+※ いくつか注意点について、Rails チュートリアル にあるので読むことを推奨
