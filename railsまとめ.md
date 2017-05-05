@@ -352,3 +352,63 @@ https://railsguides.jp/active_record_callbacks.html
   - (引数の文字列がパスワードと一致するとUserオブジェクトを、間違っているとfalseを返すメソッド)
 
 ※ いくつか注意点について、Rails チュートリアル にあるので読むことを推奨
+
+
+--
+
+
+# 7章でのまとめ
+## デバッグ について
+Rails アプリケーションのデバッグ を参考にする
+https://railsguides.jp/debugging_rails_applications.html
+
+
+## Rails の環境について
+Rails チュートリアル の　コラム 7.1. Railsの3つの環境 を参考にする
+
+
+## 7.1.3 debuggerメソッド について（byebug gem）
+※ この debugger メソッドは Rails 標準のデバック機能ではない
+
+byebug について Rails チュートリアル で不足な場合は以下を参考にする
+* printデバッグにさようなら！Ruby初心者のためのByebugチュートリアル
+http://qiita.com/jnchito/items/5aaf323ab4f24b526a61
+* byebugでRubyスクリプトをコマンドラインデバッグする
+http://qiita.com/aosho235/items/6f988a0b5262b95ca460
+
+
+## form_forヘルパー について
+Action View フォームヘルパー についての詳細は以下を参考にする
+https://railsguides.jp/form_helpers.html
+
+
+## 7.3.2 Strong Parameters について
+Action Controller の概要 の 4.5 Strong Parameters を参考にする
+https://railsguides.jp/action_controller_overview.html#strong-parameters
+
+
+## 7.3.3 エラーメッセージ について
+Active Record バリデーション の 7 バリデーションエラーに対応する を参考にする
+https://railsguides.jp/active_record_validations.html#%E3%83%90%E3%83%AA%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%99%E3%82%8B
+
+### shared/ ディレクトリについて
+Rails全般の慣習で、パーシャルは複数のコントローラにわたるビューに対し、専用のshared/ディレクトリを使用する
+
+### エラーメッセジをビューで表示する について
+Active Record バリデーション の バリデーションエラーをビューで表示する を参考にする
+https://railsguides.jp/active_record_validations.html#%E3%83%90%E3%83%AA%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E3%83%93%E3%83%A5%E3%83%BC%E3%81%A7%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B
+
+
+## 7.4.2 flash について
+Action Controller の概要 の 5.2 Flash を参考にする
+https://railsguides.jp/action_controller_overview.html#flash
+
+
+## 7.5.1 本番環境でのSSL 7.5.2 本番環境用のWebサーバー について
+ローカル環境で実施のため割愛する
+
+SSLについては
+Rails セキュリティガイド 2.3 セッションハイジャック を参考にする
+https://railsguides.jp/security.html#%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%8F%E3%82%A4%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF
+
+本番環境のWebサーバーについては割愛
