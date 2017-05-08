@@ -8,7 +8,13 @@ http://api.rubyonrails.org/
 
 
 # Rails：GitHubからコードをダウンロードして動かしてみるまでの手順
-以下を参考にする
+* 抜粋
+  1. gem install bundler
+  2. bundle install
+  3. rails db:migrate
+  4. rails s
+
+詳細は以下を参考にする
 http://tyoshikawa1106.hatenablog.com/entry/2015/09/07/164134
 
 
@@ -437,3 +443,16 @@ https://railsguides.jp/action_controller_overview.html#flash
 
 ## 「||=」について
 Rails チュートリアル の コラム 8.1. 「||=」とは何か？ を参考にする
+
+
+## 8.2.4 レイアウトの変更をテストする
+Rails チュートリアル よりも詳細については、
+Rails テスティングガイド の 4.6 テンプレートとレイアウトをテストする を参考にする
+https://railsguides.jp/testing.html#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%81%A8%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B
+
+
+## ヘルパーのテスト について
+8.2.5 ユーザー登録時にログイン を参考にする
+より詳細は Rails ガイド
+Rails テスティングガイド の 11 ヘルパーをテストする を参考にする
+https://railsguides.jp/testing.html#%E3%83%98%E3%83%AB%E3%83%91%E3%83%BC%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B
