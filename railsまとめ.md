@@ -424,6 +424,8 @@ https://railsguides.jp/security.html#%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%
 
 
 # 8章でのまとめ
+※ 8章は難度が高い
+
 ## 8.1 セッション 8.1.1 Sessionsコントローラ について
 Rails チュートリアルより詳細は、Rails セキュリティガイド の 2 セッション を参考にする
 https://railsguides.jp/security.html#%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3
@@ -450,9 +452,35 @@ Rails チュートリアル よりも詳細については、
 Rails テスティングガイド の 4.6 テンプレートとレイアウトをテストする を参考にする
 https://railsguides.jp/testing.html#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%81%A8%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B
 
+※ Rails チュートリアル 内には、test用データについても記載があるので参考にする
+
 
 ## ヘルパーのテスト について
 8.2.5 ユーザー登録時にログイン を参考にする
 より詳細は Rails ガイド
 Rails テスティングガイド の 11 ヘルパーをテストする を参考にする
 https://railsguides.jp/testing.html#%E3%83%98%E3%83%AB%E3%83%91%E3%83%BC%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B
+
+
+--
+
+
+# 9章でのまとめ
+※ 9章は難度が高い
+
+## 9.1.1 記憶トークンと暗号化 について
+Rails チュートリアル を参考にする
+より詳細については、Rails セキュリティガイド を参考にする
+https://railsguides.jp/security.html
+
+
+## cookiesメソッド について
+cookiesメソッドは、sessionのときと同様にハッシュとして扱える
+個別のcookiesは、ひとつのvalue (値) と、オプションのexpires (有効期限) からできている
+有効期限は省略可能
+
+
+## 9.1.4 ２つの目立たないバグ について
+複数タブの問題、複数ブラウザの問題 を取り扱っているので
+Rails チュートリアル 9章の 9.1.4 ２つの目立たないバグ を参考にする
+https://railstutorial.jp/chapters/advanced_login?version=5.0#sec-two_subtle_bugs
