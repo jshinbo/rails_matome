@@ -5,6 +5,11 @@ https://railstutorial.jp/
 https://railsguides.jp/
 * API ドキュメント
 http://api.rubyonrails.org/
+* Ruby Style ガイド
+https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md
+
+
+--
 
 
 # Rails：GitHubからコードをダウンロードして動かしてみるまでの手順
@@ -16,6 +21,22 @@ http://api.rubyonrails.org/
 
 詳細は以下を参考にする
 http://tyoshikawa1106.hatenablog.com/entry/2015/09/07/164134
+
+
+--
+
+
+# Rails チュートリアル の前に
+目を通すだけでもチュートリアル時の理解が違うかもしれない
+* Rails ガイド の Rails をはじめよう
+https://railsguides.jp/getting_started.html
+* ドットインストール（バージョンが古いので雰囲気をつかむ程度なら）
+http://dotinstall.com/lessons/basic_rails_v2
+* Progate（有料会員向けが多いのでなんとも言えない）
+https://prog-8.com/languages/rails
+
+
+--
 
 
 # 1章でのまとめ
@@ -466,7 +487,7 @@ https://railsguides.jp/testing.html#%E3%83%98%E3%83%AB%E3%83%91%E3%83%BC%E3%82%9
 
 
 # 9章でのまとめ
-※ 9章は難度が高い
+※ 基本的に、8章の発展的な内容なので Rails チュートリアル の内容にしたがって実施する
 
 ## 9.1.1 記憶トークンと暗号化 について
 Rails チュートリアル を参考にする
@@ -484,3 +505,19 @@ cookiesメソッドは、sessionのときと同様にハッシュとして扱え
 複数タブの問題、複数ブラウザの問題 を取り扱っているので
 Rails チュートリアル 9章の 9.1.4 ２つの目立たないバグ を参考にする
 https://railstutorial.jp/chapters/advanced_login?version=5.0#sec-two_subtle_bugs
+
+
+--
+
+
+# 10章でのまとめ
+※ 基本的に、8章の発展的な内容なので Rails チュートリアル の内容にしたがって実施する
+
+## db/seeds.rb rails db:seed について
+Active Record マイグレーション の 8 マイグレーションとシードデータ を参考にする
+https://railsguides.jp/active_record_migrations.html#%E3%83%9E%E3%82%A4%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%82%B7%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF
+
+
+## rails db:migrate:reset について
+Active Record マイグレーション の 4.3 データベースをリセットする を参考にする
+https://railsguides.jp/active_record_migrations.html#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%92%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%81%99%E3%82%8B
