@@ -1,10 +1,18 @@
 # 主に利用するサイト
+## Rails 関係
 * Rails チュートリアル
 https://railstutorial.jp/
 * Rails ガイド
 https://railsguides.jp/
 * API ドキュメント
 http://api.rubyonrails.org/
+
+
+## Ruby 関係
+* Ruby リファレンスマニュアル
+https://docs.ruby-lang.org/ja/
+* るりまサーチ（Ruby リファレンス検索）
+https://docs.ruby-lang.org/ja/search/
 * Ruby Style ガイド
 https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md
 
@@ -34,6 +42,11 @@ https://railsguides.jp/getting_started.html
 http://dotinstall.com/lessons/basic_rails_v2
 * Progate（有料会員向けが多いのでなんとも言えない）
 https://prog-8.com/languages/rails
+
+
+## Cloud9、Bitbucket、Heroku の利用について
+クレジットカードの登録が必要になるが（料金は発生しない）、個人で問題がなければ
+Rails チュートリアルに従って Cloud9、Bitbucket、Heroku を利用したほうが早い
 
 
 --
@@ -487,8 +500,6 @@ https://railsguides.jp/testing.html#%E3%83%98%E3%83%AB%E3%83%91%E3%83%BC%E3%82%9
 
 
 # 9章でのまとめ
-※ 基本的に、8章の発展的な内容なので Rails チュートリアル の内容にしたがって実施する
-
 ## 9.1.1 記憶トークンと暗号化 について
 Rails チュートリアル を参考にする
 より詳細については、Rails セキュリティガイド を参考にする
@@ -511,8 +522,6 @@ https://railstutorial.jp/chapters/advanced_login?version=5.0#sec-two_subtle_bugs
 
 
 # 10章でのまとめ
-※ 基本的に、8章の発展的な内容なので Rails チュートリアル の内容にしたがって実施する
-
 ## db/seeds.rb rails db:seed について
 Active Record マイグレーション の 8 マイグレーションとシードデータ を参考にする
 https://railsguides.jp/active_record_migrations.html#%E3%83%9E%E3%82%A4%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%82%B7%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF
@@ -521,3 +530,23 @@ https://railsguides.jp/active_record_migrations.html#%E3%83%9E%E3%82%A4%E3%82%B0
 ## rails db:migrate:reset について
 Active Record マイグレーション の 4.3 データベースをリセットする を参考にする
 https://railsguides.jp/active_record_migrations.html#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%92%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%81%99%E3%82%8B
+
+
+--
+
+
+# 11章でのまとめ
+## Mailer（メイラー） について
+Mailer については、Rails ガイドの Action Mailer の基礎 を参考にする
+https://railsguides.jp/action_mailer_basics.html
+
+
+## 11.2.2 送信メールのプレビュー について
+チュートリアルより詳細については、
+Rails ガイド内に詳細が見当たらなかったので、以下のサイトを参考にする
+http://y-yagi.tumblr.com/post/88746017105/rails%E3%81%AEaction-mailer-previews%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+
+
+## CGI.escape について
+Ruby のメソッドのため、以下を参考にする
+https://docs.ruby-lang.org/ja/search/query:CGI.escape/
