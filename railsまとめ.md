@@ -518,6 +518,15 @@ Rails チュートリアル 9章の 9.1.4 ２つの目立たないバグ を参�
 https://railstutorial.jp/chapters/advanced_login?version=5.0#sec-two_subtle_bugs
 
 
+## assigns メソッドについて
+assigns メソッドについては、
+Rails チュートリアル内の以下の演習を参考にする
+https://railstutorial.jp/chapters/advanced_login?version=5.0#sec-exercises_testing_the_remember_me_box
+
+Railsガイド Rails テスティングガイド 内の 4.3 4つのハッシュ を参考にする
+https://railsguides.jp/testing.html#4%E3%81%A4%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5
+
+
 --
 
 
@@ -550,3 +559,8 @@ http://y-yagi.tumblr.com/post/88746017105/rails%E3%81%AEaction-mailer-previews%E
 ## CGI.escape について
 Ruby のメソッドのため、以下を参考にする
 https://docs.ruby-lang.org/ja/search/query:CGI.escape/
+
+
+## development 環境等でアカウント有効化のURLを試すとき
+サインインすると rails s のサーバーログに出力される
+※ Rails チュートリアルの リスト 11.25: サーバーログに表示されたアカウント有効化メールの例 を参考にする
