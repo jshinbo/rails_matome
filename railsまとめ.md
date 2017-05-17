@@ -564,3 +564,28 @@ https://docs.ruby-lang.org/ja/search/query:CGI.escape/
 ## development 環境等でアカウント有効化のURLを試すとき
 サインインすると rails s のサーバーログに出力される
 ※ Rails チュートリアルの リスト 11.25: サーバーログに表示されたアカウント有効化メールの例 を参考にする
+
+
+--
+
+
+# 12章でのまとめ
+## --no-test-framework について
+--no-test-framework: rails generate でテストを生成されないようにするオプション
+
+
+## フォームでシンボルを使う理由（オブジェクトを使う場合との違い） について
+以下のサイトを参考にする
+https://ja.stackoverflow.com/questions/18099/rails%E3%81%AEform-for%E3%81%AB%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%92%E4%B8%8E%E3%81%88%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%81%A8%E3%81%8D%E3%81%8B
+
+
+## f.hidden_field と hidden_field_tag の違いについて
+Rails チュートリアル以外も調べたが、分からなかったので、Rails チュートリアルを参考にする
+* 抜粋
+前者 : hidden_field_tag :email, @user.email
+後者 : f.hidden_field :email, @user.email
+前者（hidden_field_tag） ではメールアドレスがparams[:email]に保存される
+後者（f.hidden_field） ではparams[:user][:email] に保存される
+
+※ 違いについては書いていないが、以下も載せておく
+http://ruby-rails.hatenadiary.com/entry/20150113/1421149061#view-helpers-hidden
