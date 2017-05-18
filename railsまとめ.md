@@ -6,6 +6,9 @@ https://railstutorial.jp/
 https://railsguides.jp/
 * API ドキュメント
 http://api.rubyonrails.org/
+* 演習の解答
+http://qiita.com/mochikichi321/items/ea641d218df4a3941aad
+http://mochikichi.hatenablog.com/entry/2017/02/06/212658
 
 
 ## Ruby 関係
@@ -589,3 +592,60 @@ Rails チュートリアル以外も調べたが、分からなかったので�
 
 ※ 違いについては書いていないが、以下も載せておく
 http://ruby-rails.hatenadiary.com/entry/20150113/1421149061#view-helpers-hidden
+
+
+--
+
+
+# 13章でのまとめ
+## インデックス について
+Active Record マイグレーション を参考にする
+https://railsguides.jp/active_record_migrations.html
+※ 複合インデックスの指定については Rails チュートリアル（13章）と以下を参考にする
+https://openbook4.me/sections/621
+http://qiita.com/ryu-taka/items/c9045a48497c062f5595
+
+
+## 13.1.3 User/Micropostの関連付け について
+Rails チュートリアルの内容と合わせて
+Rails ガイドの Active Record の関連付け (アソシエーション) を参考にする
+https://railsguides.jp/association_basics.html
+
+
+## default_scope（スコープ） について
+Rails ガイド Active Record クエリインターフェイス の 14 スコープ を参考にする
+https://railsguides.jp/active_record_querying.html#%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97
+
+
+## dependent: :destroy について
+Rails ガイド Active Record の関連付け (アソシエーション) の 4.1.2.4 :dependent を参考にする
+https://railsguides.jp/association_basics.html#belongs-to%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3-dependent
+
+
+## take メソッド について
+Rails ガイド Active Record クエリインターフェイス の 1.1.2 take を参考にする
+https://railsguides.jp/active_record_querying.html#take
+
+
+## リスト 13.26: マイクロポスト用のCSS (本章で利用するCSSのすべて) について
+このリストにかかれているCSSだと、崩れたので、以下の li ブロックに height: 110px を追加した
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+
+※ 途中で間違えたため表示が崩れた可能性有り
+
+
+## carrierwave gem, mini_magick gem, fog gem について
+以下を参考にする
+* carrierwave
+http://qiita.com/unchiman-tojour-haraita/items/cc447237e23bf10d159e
+http://morizyun.github.io/blog/carrierwave-image-uploader-rails/
+* mini_magick
+http://keruuweb.com/rails-minimagick%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/
+* fog (あまり参考になりそうなのがなかった)
+http://qiita.com/ryo-ichikawa/items/a30dc626cba1ec909d57
