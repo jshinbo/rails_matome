@@ -628,16 +628,7 @@ https://railsguides.jp/active_record_querying.html#take
 
 
 ## リスト 13.26: マイクロポスト用のCSS (本章で利用するCSSのすべて) について
-このリストにかかれているCSSだと、崩れたので、以下の li ブロックに height: 110px を追加した
-.microposts {
-  list-style: none;
-  padding: 0;
-  li {
-    padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
-  }
-
-※ 途中で間違えたため表示が崩れた可能性有り
+途中で間違えたのか、崩れたので マイクロポストの li ブロックに margin-bottom: 30px; を追加してみた
 
 
 ## carrierwave gem, mini_magick gem, fog gem について
@@ -649,3 +640,17 @@ http://morizyun.github.io/blog/carrierwave-image-uploader-rails/
 http://keruuweb.com/rails-minimagick%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/
 * fog (あまり参考になりそうなのがなかった)
 http://qiita.com/ryo-ichikawa/items/a30dc626cba1ec909d57
+
+
+## validates, validate について
+validates について
+Active Record バリデーション を参考にする
+https://railsguides.jp/active_record_validations.html
+
+validate については
+Active Record バリデーション 6.2 カスタムメソッド を参考にする
+https://railsguides.jp/active_record_validations.html#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89
+
+
+## 13.4.4 本番環境での画像アップロード について
+heroku 利用していなかったので、割愛
