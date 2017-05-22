@@ -654,3 +654,33 @@ https://railsguides.jp/active_record_validations.html#%E3%82%AB%E3%82%B9%E3%82%B
 
 ## 13.4.4 本番環境での画像アップロード について
 heroku 利用していなかったので、割愛
+
+
+--
+
+
+# 14章でのまとめ
+## 関連付け について
+何度もでているが、Active Record の関連付け を参考にする
+https://railsguides.jp/association_basics.html
+
+* class_name オプション について
+https://railsguides.jp/association_basics.html#belongs-to%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3-class-name
+* foreign_key オプション について
+https://railsguides.jp/association_basics.html#belongs-to%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3-foreign-key
+
+
+## :through 関連付けについて
+以下を参考にする
+* 2.4 has_many :through関連付け
+https://railsguides.jp/association_basics.html#has-many-through%E9%96%A2%E9%80%A3%E4%BB%98%E3%81%91
+* 2.5 has_one :through関連付け
+https://railsguides.jp/association_basics.html#has-one-through%E9%96%A2%E9%80%A3%E4%BB%98%E3%81%91
+
+
+## ルーティングにアクションを追加する（member ルーティングを追加する）について
+2.10 RESTfulなアクションをさらに追加する 内の 2.10.1 メンバールーティングを追加する を参考にする
+https://railsguides.jp/routing.html#restful%E3%81%AA%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E3%81%95%E3%82%89%E3%81%AB%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
+
+※ collection メソッドとの違いは、Rails チュートリアル 14.2.2 統計と [Follow] フォーム 又は、
+上記のURLを参考にする
