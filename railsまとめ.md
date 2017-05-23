@@ -684,3 +684,14 @@ https://railsguides.jp/routing.html#restful%E3%81%AA%E3%82%A2%E3%82%AF%E3%82%B7%
 
 ※ collection メソッドとの違いは、Rails チュートリアル 14.2.2 統計と [Follow] フォーム 又は、
 上記のURLを参考にする
+
+
+## ajax について
+ajax については、Rails で JavaScript を使用する を参考にする
+https://railsguides.jp/working_with_javascript_in_rails.html
+
+
+## 読み物ガイド
+日本語の読み物として以下が紹介されていた
+* Ruby on Railsを仕事にしていくための第一歩
+http://morizyun.github.io/blog/ruby-rails-non-beginner-guide-book/
