@@ -1,6 +1,6 @@
 # 主に利用するサイト
 ## Rails 関係
-* Rails チュートリアル
+* Rails チュートリアル Rails 5.0版 (第3版)
 https://railstutorial.jp/
 * Rails ガイド
 https://railsguides.jp/
