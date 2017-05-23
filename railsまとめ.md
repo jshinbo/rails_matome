@@ -1,4 +1,4 @@
-# 主に利用するサイト
+# 主に利用したサイト
 ## Rails 関係
 * Rails チュートリアル Rails 5.0版 (第3版)
 https://railstutorial.jp/
